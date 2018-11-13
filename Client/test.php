@@ -453,7 +453,7 @@
               <div class="text-center">
                 <button type="submit" name="submit">Send Message</button>
               </div>
-lol
+
             </form>
           </div>
         </div>
