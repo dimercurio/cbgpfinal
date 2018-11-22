@@ -1,50 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Country Boys Game Processing</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-  <meta property="og:title" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
-
-  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-
-  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
-  <link href="favicon.ico" rel="shortcut icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: Imperial
-    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
+<?php include('head.php'); ?>
 
 <body>
   <div id="preloader"></div>
@@ -87,25 +44,8 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Menu</a></li>
+          <li><a href="order">Order</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#team">Order</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
@@ -165,17 +105,51 @@
       </div>
 
       <div class="row">
-        <div class="col-md-4 service-item">
-          <img src="img/meat-fridge.jpg" class="services-img-resize" />
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic center"><img src="img/meat-fridge.jpg" alt=""></div>
+            <h4>Mobile Processing</h4>
+            <span>We're fully equipped for your game processing needs.</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic center"><img src="img/vacuum_meat_edit.png" alt=""></div>
+            <h4>Vacuum Sealed</h4>
+            <span>Product is vacuum sealed and labeled to order.</span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="profile">
+            <div class="pic center"><img style="max-width: 150% !important;" src="img/smoked_sausage.jpg" alt=""></div>
+            <h4>Sausage and Smoke Curing</h4>
+            <span>Custom sausage and smoke curing is available</span>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+     <!--- <div class="row">
+        <div class="col-md-4">
+            <div class="pic">
+                <div class="profile">
+          <img src="img/meat-fridge.jpg" class="profile" />
+          </div>
+          </div>
           <h4 class="service-title"><a href="">Mobile Refrigeration</a></h4>
           <p class="service-description">We're fully equipped for your game processing needs.</p>
+
+
         </div>
         <div class="col-md-4 service-item">
           <img src="img/vacuum_meat.jpg" class="services-img-resize"/>
           <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
           <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
         </div>
-      </div>
+    </div> --->
 
     </div>
   </section>
@@ -212,7 +186,7 @@
 
       <div class="row">
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/steaks-menu.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/steaks-menu.jpg);" href="order">
             <div class="details">
               <h4>Steaks</h4>
               <span></span>
@@ -221,7 +195,7 @@
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/CBG_Burgers.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/CBG_Burgers.jpg);" href="order">
             <div class="details">
               <h4>Burgers</h4>
               <span></span>
@@ -230,7 +204,7 @@
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/sausages-menu.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/sausages-menu.jpg);" href="order">
             <div class="details">
               <h4>Sausages</h4>
               <span></span>
@@ -239,7 +213,7 @@
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/roasts-menu.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/roasts-menu.jpg);" href="order">
             <div class="details">
               <h4>Roasts</h4>
               <span>Alored dono par</span>
@@ -248,7 +222,7 @@
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/snacks-menu.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/snacks-menu.jpg);" href="order">
             <div class="details">
               <h4>Snacks</h4>
               <span>Meat snacks such as jerky and snack sticks. </span>
@@ -257,7 +231,7 @@
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/offal-menu.jpg);" href="">
+          <a class="portfolio-item" style="background-image: url(img/offal-menu.jpg);" href="order">
             <div class="details">
               <h4>Misc</h4>
               <span>Offal: Bones, as well as organ meat such as the liver and heart. </span>
@@ -316,80 +290,6 @@
   </section>
 
   <!--==========================
-  Team Section
-  ============================-->
-  <section id="team">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="section-title">Our Team</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
-            <span>Product Manager</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!--==========================
   Contact Section
   ============================-->
   <section id="contact">
@@ -425,27 +325,40 @@
 
         <div class="col-md-5 col-md-push-2">
           <div class="form">
+
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form action="https://formspree.io/ddimercurio126@gmail.com" method="post" class="contactForm">
+            <form action="form-to-email.php" method="post" class="contact-form" id="contactForm">
+
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required auto
+                 />
                 <div class="validation"></div>
               </div>
+
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="text" type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                required autofocus />
                 <div class="validation"></div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+
+             <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
+                required autofocus />
                 <div class="validation"></div>
               </div>
+
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                required autofocus></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+
+              <div class="text-center">
+                <button type="submit" name="submit">Send Message</button>
+              </div>
             </form>
+
           </div>
         </div>
 
@@ -493,7 +406,10 @@
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
 
-  <script src="contactform/contactform.js"></script>
+  <!-- Handles the response and displays success/errors to user -->
+  <script src="js/formsubmit.js"></script>
+
+
 
 
 </body>

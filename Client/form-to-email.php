@@ -1,33 +1,38 @@
 <?php
 
-    if (isset($_POST['submit'])) {
+$name = $_POST['name'];
+$mailFrom = $_POST['mailFrom'];
+$message = $_POST['message'];
+$subject = $_POST['subject'];
 
-        $name = $_POST['name'];
-        $mailFrom = $_POST['email'];
-        $message = $_POST['message'];
+$mailTo = "danny@dannydimercurio.com";
+$headers = "From: ".$mailFrom;
 
-        $mailTo = "danny@dannydimercurio.com";
-        $headers = "From: ".$mailFrom;
-        $txt .= "You have received an e-mail from ".$name.".\n\n".$message;
 
-        $success = mail($mailTo, "test", $txt, $headers);
 
+        /*$txt .= "You have received an e-mail from ".$name.".\n\n".$message;*/
+
+$success = mail($mailTo, "test", $txt, $headers);
+
+if ($success) {
+    echo "Thank you! We'll get back to you as soon as possible!";
+}
+else{
+    echo "Whoops! We had a problem sending your message. Please give us a call!"
+}
+
+
+        /*if ($mailFrom == "ddimercurio126@gmail.com") {
+            json_encode(array('thing' => "You succeeded!"));
+        }
+
+
+        /*if ($success) {
+            echo json_encode(array('thing' => "You succeeded!"));
+
+        }
+        else{
+            echo json_encode(array("thing2" => "You didn't succeed, you suck!"));
+        }
 
          /* header("Location: index.php?mailsend"); */
-    }
-?>
-<!DOCTYPE html>
-
-    <body>
-        <?php
-        if (isset($success) && $success) { ?>
-            <h1>Thank you</h1>
-            <p>Your message has been sent.</p>
-        <?php } else { ?>
-            <h1>Oops!</h1>
-            <p>Sorry, there was a problem sending your message</p>
-        <?php } ?>
-        
-    </body>
-
-</html>
