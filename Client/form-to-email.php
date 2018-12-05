@@ -12,7 +12,7 @@ $headers = "From: " . $mailFrom;
 
         /*$txt .= "You have received an e-mail from ".$name.".\n\n".$message;*/
 $newSubject = "Inquiry from " . $name;
-$success = mail($mailTo, $newSubject, $txt, $headers);
+$success = mail($mailTo, $newSubject, $message, $headers);
 
 if ($success) {
     echo "Thank you! We'll get back to you as soon as possible!";

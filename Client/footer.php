@@ -21,12 +21,6 @@ Footer
     </div>
   </div>
 </footer>
-<script type="text/javascript">
-$document.ready(function(){
-  alert('testtt')
-});
-
-</script>
 <!-- #footer -->
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

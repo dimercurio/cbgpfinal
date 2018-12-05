@@ -10,7 +10,7 @@ include('header.php');
         <h1 class="jumbotron text-center jumboBackground" style="color: white;">Order</h1>
         <div class="col-md-12">
 
-            <form action="order-form-submit.php" method="post" id="orderForm">
+            <form action="weird.php" method="post" id="orderForm">
                 <div class="card">
 
                     <div class="form-group col-md-4">
@@ -23,7 +23,7 @@ include('header.php');
                     </div>
                     <div class="form-group  col-md-4">
                         <label for="phone">Phone</label>
-                        <input type="phone" class="form-control" name="phone" id="phone" placeholder="Phone Number" required autofocus />
+                        <input type="phone" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required autofocus />
                     </div>
 
                     <br>
@@ -165,8 +165,7 @@ include('header.php');
               <div class="form-group col-md-6">
                   <label>Fat Type</label>
                 <div class="dropdown">
-                  <select class="dropdown" name="fatType">
-                      <option>Select an option</option>
+                  <select class="dropdown" id="fatType" name="fatType">
                      <option value="beefFat">Beef Fat</option>
                      <option value="porkFat">Pork Fat</option>
                     </select>
@@ -236,9 +235,9 @@ include('header.php');
                         <div class="col-md-12">
                             <label>Casings Or Bulk</label>
                             <div class="dropdown">
-                                <select class="dropdown">
-                                    <option value="beefFat">Casings</option>
-                                    <option value="porkFat">Bulk</option>
+                                <select class="dropdown" id="sausageCasingsOrBulk">
+                                    <option value="sausageCasings">Casings</option>
+                                    <option value="sausageBulk">Bulk</option>
                                 </select>
                             </div>
                         </div>
@@ -246,13 +245,13 @@ include('header.php');
                         <div class="col-md-6">
                             <div class="form-group checkbox push-top-20">
                                 <label>
-                                    <input type="checkbox" id="breakfastCheckbox" name="breakfast" onclick="enableDisable(this.checked, 'breakfastWeight');">Breakfast</label>
+                                    <input type="checkbox" id="breakfastCheckbox" name="breakfastCheckbox" onclick="enableDisable(this.checked, 'breakfastWeight');">Breakfast</label>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Breakfast Sausage Weight(lbs)</label>
-                                <input type="text" class="form-control" id="breakfastWeight" name="breakFastWeight" disabled>
+                                <input type="text" class="form-control" id="breakfastWeight" name="breakfastWeight" disabled>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -445,7 +444,7 @@ include('header.php');
                             <div class="col-md-12">
                                 <label>Sliced Or Whole</label>
                                 <div class="dropdown">
-                                    <select class="dropdown">
+                                    <select class="dropdown" id="jerkySlicedOrWhole">
                                         <option value="sliced">Sliced</option>
                                         <option value="whole">Whole</option>
                                     </select>
@@ -468,13 +467,13 @@ include('header.php');
                             <div class="col-md-6">
                                 <div class="form-group checkbox push-top-20">
                                     <label>
-                                        <input type="checkbox" value="" name="jerkyCajon" />Cajun</label>
+                                        <input type="checkbox" value="" name="jerkyCajun" />Cajun</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Cajon Amount</label>
-                                    <input type="input" class="form-control" value="" name="jerkyCajonAmount" disabled />
+                                    <input type="input" class="form-control" value="" name="jerkyCajunAmount" disabled />
                                 </div>
                             </div>
                             <div class="col-md-6">
