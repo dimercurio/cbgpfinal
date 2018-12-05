@@ -6,19 +6,19 @@ $message = $_POST['message'];
 $subject = $_POST['subject'];
 
 $mailTo = "danny@dannydimercurio.com";
-$headers = "From: ".$mailFrom;
+$headers = "From: " . $mailFrom;
 
 
 
         /*$txt .= "You have received an e-mail from ".$name.".\n\n".$message;*/
-
-$success = mail($mailTo, "test", $txt, $headers);
+$newSubject = "Inquiry from " . $name;
+$success = mail($mailTo, $newSubject, $txt, $headers);
 
 if ($success) {
     echo "Thank you! We'll get back to you as soon as possible!";
 }
 else{
-    echo "Whoops! We had a problem sending your message. Please give us a call!"
+    echo "Whoops! We had a problem sending your message. Please give us a call!";
 }
 
 

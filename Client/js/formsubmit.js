@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 
         $.post("../Client/form-to-email.php", data)
             .done(function(response) {
-                alert("Data Loaded: " + response);
+                alert(response);
             });
 
         var dataString = JSON.stringify(data);
