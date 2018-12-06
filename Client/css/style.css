@@ -47,7 +47,14 @@ h1, h2, h3, h4, h5, h6 {
 .push-top-20{
     margin-top: 20px;
 }
+.push-top-30{
+    margin-top: 30px;
+}
 
+.carousel-inner > .item > img {
+  width:300px;
+  height:400px;
+}
 /* Prelaoder */
 #preloader {
   position: fixed;
@@ -599,30 +606,30 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 4px;
 }
 
-/* Subscribe Section
+/* Place Order Section
 --------------------------------*/
-#subscribe {
+#placeOrder {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/deer-subscribe.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
 
-#subscribe .subscribe-title {
+#placeOrder .subscribe-title {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
 }
 
-#subscribe .subscribe-text {
+#placeOrder .subscribe-text {
   color: #fff;
 }
 
-#subscribe .subscribe-btn-container {
+#placeOrder .subscribe-btn-container {
   text-align: center;
   padding-top: 20px;
 }
 
-#subscribe .subscribe-btn {
+#placeOrder .subscribe-btn {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -637,7 +644,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#subscribe .subscribe-btn:hover {
+#placeOrder .subscribe-btn:hover {
   background: #bb2121;
   border: 2px solid #bb2121;
 }
@@ -1009,7 +1016,18 @@ a[data-tooltip][data-placement="bottom"]::after {
 ---------------------------------------------------------------------*/
 
 .jumboBackground{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../img/deer-subscribe.jpg) fixed center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../img/venison_menu.jpg) fixed center center;
     background-size: cover;
-    padding: 80px 0;
+    padding: 140px 0;
+}
+.jumboBackgroundMenu{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../img/CBG_Burgers.jpg) fixed center center;
+    background-size: cover;
+    padding: 150px 0;
+}
+.pageH1{
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #fff;
 }

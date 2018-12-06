@@ -43,7 +43,7 @@
           <li class="menu-active"><a href="#hero">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Menu</a></li>
+          <li><a href="menu">Menu</a></li>
           <li><a href="order">Order</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact Us</a></li>
@@ -63,15 +63,38 @@
         <div class="col-md-12">
           <h3 class="section-title">About Us</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Insert mission statement text here.... Yadayadayadayadayada</p>
+          <p class="section-description"></p>
         </div>
       </div>
     </div>
     <div class="container about-container wow fadeInUp">
-      <div class="row">
+      <div class="">
 
-        <div class="col-lg-6 about-img">
-          <img src="img/elk-aboutus.jpg" alt="">
+        <div class="col-lg-4">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/Carousel/carousel_one.jpg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="img/Carousel/carousel_two.jpeg" alt="">
+    </div>
+
+    <div class="item">
+      <img src="img/Carousel/carousel_three.jpg" alt="">
+    </div>
+  </div>
+</div>
+
         </div>
 
         <div class="col-md-6 about-content">
@@ -157,15 +180,15 @@
   <!--==========================
   Subscrbe Section
   ============================-->
-  <section id="subscribe">
+  <section id="placeOrder">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-8">
-          <h3 class="subscribe-title">Subscribe For Updates</h3>
-          <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
+          <h3 class="subscribe-title">Place An Order</h3>
+          <p class="subscribe-text">Tell us how we should process your game!</p>
         </div>
         <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#">Subscribe Now</a>
+          <a class="subscribe-btn" href="order">Order</a>
         </div>
       </div>
     </div>
@@ -186,55 +209,116 @@
 
       <div class="row">
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/steaks-menu.jpg);" href="order">
+          <a class="portfolio-item" style="background-image: url(img/steaks-menu.jpg);" href="menu">
             <div class="details">
-              <h4>Steaks</h4>
-              <span></span>
+              <h3>Steaks</h3>
+
+              <span>
+                  Sirloin Steaks <br>
+                    Loin Steaks (Back Straps) <br>
+                    Flat Iron Steaks <br>
+                    London Broil <br>
+              </span>
             </div>
           </a>
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/CBG_Burgers.jpg);" href="order">
+          <a class="portfolio-item" style="background-image: url(img/CBG_Burgers.jpg);" href="menu">
             <div class="details">
-              <h4>Burgers</h4>
-              <span></span>
+              <h3>Burgers</h3>
+
+              <span>
+                Plain <br>
+                Bacon & Cheddar <br>
+                Blue Cheese & Bacon <br>
+                Green Chili <br>
+                Jalapeno Cheddar <br>
+                Green Onion <br>
+                Dried Onion <br>
+                </span>
             </div>
           </a>
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/sausages-menu.jpg);" href="order">
+          <a class="portfolio-item" style="background-image: url(img/sausages-menu.jpg);" href="menu">
             <div class="details">
-              <h4>Sausages</h4>
-              <span></span>
+              <h3>Sausages</h3>
+              <span>
+                    Sweet Italian <br>
+                    Hot Italian <br>
+                    Bell Pepper & Onion <br>
+                    Bratwursts  <br>
+                    Jalapeno Cheddar <br>
+                    Chorizo <br>
+                    Breakfast  <br> <br>
+                    Linked in casing or bulk for all sausage flavors. <br>
+              </span>
             </div>
           </a>
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/roasts-menu.jpg);" href="order">
+          <a class="portfolio-item" style="background-image: url(img/roasts-menu.jpg);" href="menu">
             <div class="details">
-              <h4>Roasts</h4>
-              <span>Alored dono par</span>
+              <h3>Roasts</h3>
+              <span>
+                    Rolled Roast Stuffed w/ Blue Cheese and Spinach <br>
+                    Crown Rib-Roast <br>
+                    Frenched Racks <br>
+                    Tied Neck Roast "Boneless" <br>
+                    Tied Loin Roast <br>
+              </span>
             </div>
           </a>
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/snacks-menu.jpg);" href="order">
+          <a class="portfolio-item" style="background-image: url(img/snacks-menu.jpg);" href="menu">
             <div class="details">
-              <h4>Snacks</h4>
-              <span>Meat snacks such as jerky and snack sticks. </span>
+              <h3>Snacks</h3>
+              <span>
+                  <div class="col-md-4">
+
+
+                  <h4>Summer Sausage</h4>
+                    -Jalapeno Cheddar <br>
+                    -Cheddar <br>
+                    -Peppered <br>
+                    -Green Onion & Garlic
+                    </div>
+                    <div class="col-md-4">
+
+
+                    <h4>Snack Sticks</h4>
+                    -Original <br>
+                    -Spicy
+                </div>
+                <div class="col-md-4">
+
+
+                    <h4>Jerky</h4>
+                    -Peppered <br>
+                    -Teriyaki <br>
+                    -Dr. Pepper & Jalapeno <br>
+                    </div>
+              </span>
             </div>
           </a>
         </div>
 
         <div class="col-md-4">
-          <a class="portfolio-item" style="background-image: url(img/offal-menu.jpg);" href="order">
+          <a class="portfolio-item" style="background-image: url(img/offal-menu.jpg);" href="menu">
             <div class="details">
-              <h4>Misc</h4>
-              <span>Offal: Bones, as well as organ meat such as the liver and heart. </span>
+              <h3>Offal</h3>
+              <span>
+                Osso Buco <br>
+                Sliced Liver <br>
+                Sliced Heart <br>
+                Saved Scraps (Great for dogs) <br>
+                Cut Bones For Stock <br>
+            </span>
             </div>
           </a>
         </div>
@@ -306,18 +390,13 @@
         <div class="col-md-3 col-md-push-2">
           <div class="info">
             <div>
-              <i class="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
-            </div>
-
-            <div>
               <i class="fa fa-envelope"></i>
-              <p>info@example.com</p>
+              <p>cbgprocessing@gmail.com</p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
+              <p>(480) 494-7754</p>
             </div>
 
           </div>
