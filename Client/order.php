@@ -190,12 +190,12 @@ include('header.php');
                   </div>
                 <div class="form-group  col-md-6">
                     <label for="liverSliced">Size Of Package</label>
-                    <input type="text" class="form-control" name="liverSize" id="liverSize" placeholder="Size Of Package(weight)" />
+                    <input type="text" class="form-control" name="liverSize" id="liverSize" placeholder="Size Of Package(weight)" disabled />
                 </div>
                 <div class="form-group col-md-6">
                     <label>Sliced Or Whole</label>
                   <div class="dropdown">
-                    <select class="form-control" name="liverSlicedOrWhole" id="liverSlicedOrWhole">
+                    <select class="form-control" name="liverSlicedOrWhole" id="liverSlicedOrWhole" disabled>
                        <option value="liverSliced">Sliced</option>
                        <option value="liverWhole">Whole</option>
                       </select>
@@ -636,6 +636,9 @@ include('header.php');
             <script type="text/javascript">
                 function enableDisable(enabled, textBoxID) {
                     document.getElementById(textBoxID).disabled = !enabled;
+                    if(!enabled){
+                        document.getElementById(textBoxID).value = "";
+                    }
                 }
 
                 function enableDisableLiver(enabled, selectID, textBoxID) {

@@ -111,8 +111,8 @@ $message .= "<tr><td><strong>Date Harvested:</strong> </td><td>" . $dateHarveste
 $message .= "<tr><td><strong>Arm Roast:</strong> </td><td>" . yesOrNo($armRoast) . "</td></tr>";
 $message .= "<tr><td><strong>Flat Iron Steak:</strong> </td><td>" . yesOrNo($flatIronSteak) . "</td></tr>";
 $message .= "<tr><td><strong>Short Ribs:</strong> </td><td>" . yesOrNo($shortRibs) . "</td></tr>";
-$message .= "<tr><td><strong>Sirloin Roasts:</strong> </td><td>" . $sirloinRoasts . "</td></tr>";
-$message .= "<tr><td><strong>Sirloin Steaks:</strong> </td><td>" . $sirloinSteaks . "</td></tr>";
+$message .= "<tr><td><strong>Sirloin Roasts:</strong> </td><td>" . yesOrNo($sirloinRoasts) . "</td></tr>";
+$message .= "<tr><td><strong>Sirloin Steaks:</strong> </td><td>" . yesOrNo($sirloinSteaks) . "</td></tr>";
 $message .= "<tr><td><strong>Sirloin Quantity:</strong> </td><td>" . $sirloinQuantity . "</td></tr>";
 $message .= "<tr><td><strong>Sirloin Thickness:</strong> </td><td>" . $sirloinThickness . "</td></tr>";
 $message .= "<tr><td><strong>Jerky Roasts:</strong> </td><td>" . $jerkyRoasts . "</td></tr>";
@@ -120,46 +120,47 @@ $message .= "<tr><td><strong>Jerky: Sliced Or Whole</strong> </td><td>" . $jerky
 $message .= "<tr><td><strong>Loin Meat Thickness: </strong> </td><td>" . $loinMeatThickness . "</td></tr>";
 $message .= "<tr><td><strong>Loin Meat Quantity</strong> </td><td>" . $loinMeatQuantity . "</td></tr>";
 $message .= "<tr><td><strong>Grind Size Of Package</strong> </td><td>" . $grindSizeOfPackage . "</td></tr>";
-$message .= "<tr><td><strong>Liver</strong> </td><td>" . $liver . "</td></tr>";
+$message .= "<tr><td><strong>Liver</strong> </td><td>" . yesOrNo($liver) . "</td></tr>";
 $message .= "<tr><td><strong>Liver: Sliced or Whole</strong> </td><td>" . $liverSlicedOrWhole . "</td></tr>";
-$message .= "<tr><td><strong>Heart: </strong> </td><td>" . $offalHeart . "</td></tr>";
-$message .= "<tr><td><strong>Bones: </strong> </td><td>" . $offalBones . "</td></tr>";
+$message .= "<tr><td><strong>Heart: </strong> </td><td>" . yesOrNo($offalHeart) . "</td></tr>";
+$message .= "<tr><td><strong>Bones: </strong> </td><td>" . yesOrNo($offalBones) . "</td></tr>";
 $message .= "<tr><td><strong>Sausage: Casings Or Bulk: </strong> </td><td>" . $casingsOrBulk . "</td></tr>";
-$message .= "<tr><td><strong>Breakfast Sausage: </strong> </td><td>" . $sausageBreakfast . "</td></tr>";
+$message .= "<tr><td><strong>Breakfast Sausage: </strong> </td><td>" . yesOrNo($sausageBreakfast) . "</td></tr>";
 $message .= "<tr><td><strong>Breakfast Sausage Weight: : </strong> </td><td>" . $breakfastSausageWeight . "</td></tr>";
-$message .= "<tr><td><strong>Chorizo: </strong> </td><td>" . $sausageChorizo . "</td></tr>";
+$message .= "<tr><td><strong>Chorizo: </strong> </td><td>" . yesOrNo($sausageChorizo) . "</td></tr>";
 $message .= "<tr><td><strong>Chorizo Weight: </strong> </td><td>" . $chorizoSausageWeight . "</td></tr>";
-$message .= "<tr><td><strong>Hot Italian Sausage: </strong> </td><td>" . $sausageHotItalian . "</td></tr>";
+$message .= "<tr><td><strong>Hot Italian Sausage: </strong> </td><td>" . yesOrNo($sausageHotItalian) . "</td></tr>";
 $message .= "<tr><td><strong>Hot Italian Sausage Weight: </strong> </td><td>" . $hotItalianSausageWeight . "</td></tr>";
-$message .= "<tr><td><strong>Sweet Italian Sausage: </strong> </td><td>" . $sausageSweetItalian . "</td></tr>";
+$message .= "<tr><td><strong>Sweet Italian Sausage: </strong> </td><td>" . yesOrNo($sausageSweetItalian) . "</td></tr>";
 $message .= "<tr><td><strong>Sweet Italian Sausage Weight: </strong> </td><td>" . $sweetItalianSausageWeight . "</td></tr>";
-$message .= "<tr><td><strong>Bratwurst Sausage: </strong> </td><td>" . $sausageBratwurst . "</td></tr>";
+$message .= "<tr><td><strong>Bratwurst Sausage: </strong> </td><td>" . yesOrNo($sausageBratwurst) . "</td></tr>";
 $message .= "<tr><td><strong>Bratwurst Sausage Weight: </strong> </td><td>" . $bratwurstSausageWeight . "</td></tr>";
-$message .= "<tr><td><strong>Bell Pepper and Onion Sausage: </strong> </td><td>" . $bellPepperAndOnion . "</td></tr>";
+$message .= "<tr><td><strong>Bell Pepper and Onion Sausage: </strong> </td><td>" . yesOrNo($bellPepperAndOnion) . "</td></tr>";
 $message .= "<tr><td><strong>Bell Pepper and Onion Sausage Weight: </strong> </td><td>" . $bellPepperSausageWeight . "</td></tr>";
-$message .= "<tr><td><strong>Jalapeno Cheddar Sausage: </strong> </td><td>" . $sausageJalapenoCheddar . "</td></tr>";
-$message .= "<tr><td><strong>Pepper Summer Sausage: </strong> </td><td>" . $summerPepper . "</td></tr>";
+$message .= "<tr><td><strong>Jalapeno Cheddar Sausage: </strong> </td><td>" . yesOrNo($sausageJalapenoCheddar) . "</td></tr>";
+$message .= "<tr><td><strong>Jalapeno Cheddar Sausage Weight: </strong> </td><td>" . $jalapenoCheddarSausageWeight . "</td></tr>";
+$message .= "<tr><td><strong>Pepper Summer Sausage: </strong> </td><td>" . yesOrNo($summerPepper) . "</td></tr>";
 $message .= "<tr><td><strong>Pepper Summer Sausage Weight: </strong> </td><td>" . $summerPepperWeight . "</td></tr>";
-$message .= "<tr><td><strong>Jalapeno Summer Sausage: </strong> </td><td>" . $summerJalapeno . "</td></tr>";
+$message .= "<tr><td><strong>Jalapeno Summer Sausage: </strong> </td><td>" . yesOrNo($summerJalapeno) . "</td></tr>";
 $message .= "<tr><td><strong>Jalapeno Summer Sausage Weight: </strong> </td><td>" . $summerJalapenoCheddarWeight . "</td></tr>";
-$message .= "<tr><td><strong>Summer Cheddar Cheese: </strong> </td><td>" . $summerCheddarCheese . "</td></tr>";
+$message .= "<tr><td><strong>Summer Cheddar Cheese: </strong> </td><td>" . yesOrNo($summerCheddarCheese) . "</td></tr>";
 $message .= "<tr><td><strong>Summer Cheddar Cheese Weight: </strong> </td><td>" . $summerCheddarCheeseWeight . "</td></tr>";
-$message .= "<tr><td><strong>Summer Green Onion: </strong> </td><td>" . $summerGreenOnion . "</td></tr>";
+$message .= "<tr><td><strong>Summer Green Onion: </strong> </td><td>" . yesOrNo($summerGreenOnion) . "</td></tr>";
 $message .= "<tr><td><strong>Summer Green Onion Weight: </strong> </td><td>" . $summerGreenOnionWeight . "</td></tr>";
 $message .= "<tr><td><strong>Summer Smoked: </strong> </td><td>" . yesOrNo($isSummerSmoked) . "</td></tr>";
 $message .= "<tr><td><strong>Summer Casings Size: </strong> </td><td>" . $summerCasingsSize . "</td></tr>";
-$message .= "<tr><td><strong>Snack Original: </strong> </td><td>" . $snackOriginal . "</td></tr>";
-$message .= "<tr><td><strong>Snack Spicy: </strong> </td><td>" . $snackSpicy . "</td></tr>";
-$message .= "<tr><td><strong>Snack Cheddar: </strong> </td><td>" . $snackCheddar . "</td></tr>";
+$message .= "<tr><td><strong>Snack Original: </strong> </td><td>" . yesOrNo($snackOriginal) . "</td></tr>";
+$message .= "<tr><td><strong>Snack Spicy: </strong> </td><td>" . yesOrNo($snackSpicy) . "</td></tr>";
+$message .= "<tr><td><strong>Snack Cheddar: </strong> </td><td>" . yesOrNo($snackCheddar) . "</td></tr>";
 
 $message .= "<tr><td><strong>Jerky Sliced Or Whole: </strong> </td><td>" . $jerkySlicedOrWhole . "</td></tr>";
-$message .= "<tr><td><strong>Jerky Peppered: </strong> </td><td>" . $jerkyPeppered . "</td></tr>";
+$message .= "<tr><td><strong>Jerky Peppered: </strong> </td><td>" . yesOrNo($jerkyPeppered) . "</td></tr>";
 $message .= "<tr><td><strong>Jerky Peppered Amount: </strong> </td><td>" . $jerkyPepperedAmount . "</td></tr>";
-$message .= "<tr><td><strong>Jerky Cajun: </strong> </td><td>" . $jerkyCajun . "</td></tr>";
+$message .= "<tr><td><strong>Jerky Cajun: </strong> </td><td>" . yesOrNo($jerkyCajun) . "</td></tr>";
 $message .= "<tr><td><strong>Jerky Cajun Amount: </strong> </td><td>" . $jerkyCajunAmount . "</td></tr>";
-$message .= "<tr><td><strong>Jerky Dr Pepper: </strong> </td><td>" . $jerkyDrPepper . "</td></tr>";
+$message .= "<tr><td><strong>Jerky Dr Pepper: </strong> </td><td>" . yesOrNo($jerkyDrPepper) . "</td></tr>";
 $message .= "<tr><td><strong>Jerky Dr Pepper Amount: </strong> </td><td>" . $jerkyDrPepperAmount . "</td></tr>";
-$message .= "<tr><td><strong>Jerky Teriyaki: </strong> </td><td>" . $jerkyTeriyaki . "</td></tr>";
+$message .= "<tr><td><strong>Jerky Teriyaki: </strong> </td><td>" . yesOrNo($jerkyTeriyaki) . "</td></tr>";
 $message .= "<tr><td><strong>Jerky Teriyaki Amount: </strong> </td><td>" . $jerkyTeriyakiAmount . "</td></tr>";
 
 /* $message .= "<tr><td><strong>URL To Change (main):</strong> </td><td>" . $_POST['URL-main'] . "</td></tr>"; */
@@ -177,6 +178,7 @@ if (!empty($message)) {
 else{
   echo "Sorry, we were unable to submit your order. Please contact us by phone or email.";
 }
+
 /*echo '<script language="javascript">alert("'.$name.'"); </script>';*/
 
 
@@ -184,7 +186,7 @@ else{
 
 function yesOrNo($value)
 {
-    return $value === true ? 'YES' : 'NO';
+    return $value == true ? 'Yes' : 'No';
 }
 
 ?>
