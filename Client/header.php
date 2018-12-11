@@ -17,8 +17,7 @@ Header Section
         <li><a href="index#services">Services</a></li>
         <li><a href="index#portfolio">Menu</a></li>
         <li><a href="order.php">Order</a></li>
-        <li><a href="index#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="index#contact">Contact Us</a></li>
       </ul>
     </nav>
     <!-- #nav-menu-container -->

@@ -130,7 +130,7 @@ include('header.php');
               <label>Sliced Or Whole</label>
             <div class="dropdown">
               <select class="form-control" id="jerkySlicedOrWhole" name="jerkySlicedOrWhole">
-                 <option>Select an option</option>
+                 <option value="N|A">Select an option</option>
                  <option value="sliced">Sliced</option>
                  <option value="whole">Whole</option>
                 </select>
@@ -529,6 +529,9 @@ include('header.php');
                             <label>Sliced Or Whole</label>
                             <div class="dropdown">
                                 <select class="form-control" id="jerkySlicedOrWhole">
+                                    <option value="">
+                                        Select An Option:
+                                    </option>
                                     <option value="sliced">Sliced</option>
                                     <option value="whole">Whole</option>
                                 </select>

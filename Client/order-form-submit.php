@@ -13,9 +13,9 @@ $species = $_POST['species'];
 $dateHarvested = $_POST['dateHarvested'];
 
 /*Front Quarters*/
-$armRoast = $_POST['armRoast'] ?: 'N/A';
-$flatIronSteak = $_POST['flatIronSteak'] ?: 'N/A';
-$shortRibs = $_POST['shortRibs'] ?: 'N/A';
+$armRoast = $_POST['armRoast'];
+$flatIronSteak = $_POST['flatIronSteak'];
+$shortRibs = $_POST['shortRibs'];
 
 /*Rear Quarters*/
 $sirloinRoasts = $_POST['sirloinRoasts'] ?: 'N/A';
@@ -115,11 +115,12 @@ $message .= "<tr><td><strong>Sirloin Roasts:</strong> </td><td>" . yesOrNo($sirl
 $message .= "<tr><td><strong>Sirloin Steaks:</strong> </td><td>" . yesOrNo($sirloinSteaks) . "</td></tr>";
 $message .= "<tr><td><strong>Sirloin Quantity:</strong> </td><td>" . $sirloinQuantity . "</td></tr>";
 $message .= "<tr><td><strong>Sirloin Thickness:</strong> </td><td>" . $sirloinThickness . "</td></tr>";
-$message .= "<tr><td><strong>Jerky Roasts:</strong> </td><td>" . $jerkyRoasts . "</td></tr>";
+$message .= "<tr><td><strong>Jerky Roasts:</strong> </td><td>" . yesOrNo($jerkyRoasts) . "</td></tr>";
 $message .= "<tr><td><strong>Jerky: Sliced Or Whole</strong> </td><td>" . $jerkySlicedOrWhole . "</td></tr>";
 $message .= "<tr><td><strong>Loin Meat Thickness: </strong> </td><td>" . $loinMeatThickness . "</td></tr>";
 $message .= "<tr><td><strong>Loin Meat Quantity</strong> </td><td>" . $loinMeatQuantity . "</td></tr>";
 $message .= "<tr><td><strong>Grind Size Of Package</strong> </td><td>" . $grindSizeOfPackage . "</td></tr>";
+$message .= "<tr><td><strong>Fat Type: </strong> </td><td>" . $fatType . "</td></tr>";
 $message .= "<tr><td><strong>Liver</strong> </td><td>" . yesOrNo($liver) . "</td></tr>";
 $message .= "<tr><td><strong>Liver: Sliced or Whole</strong> </td><td>" . $liverSlicedOrWhole . "</td></tr>";
 $message .= "<tr><td><strong>Heart: </strong> </td><td>" . yesOrNo($offalHeart) . "</td></tr>";
@@ -186,7 +187,12 @@ else{
 
 function yesOrNo($value)
 {
-    return $value == true ? 'Yes' : 'No';
+    if ($value === "true") {
+        return "Yes";
+    }
+    if($value === "false"){
+        return "No";
+    }
 }
 
 ?>
