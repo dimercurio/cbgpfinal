@@ -35,6 +35,7 @@ $fatType = $_POST['fatType'] ?: 'N/A';
 
 /*Offal (Bones & Organ Meat) */
 $liver = $_POST['liver'] ?: 'N/A';
+$liverSize = $_POST['liverSize'] ?: 'N|A';
 $liverSlicedOrWhole = $_POST['liverSlicedOrWhole'] ?: 'N/A';
 $offalHeart = $_POST['heart'] ?: 'N/A';
 $offalBones = $_POST['bones'] ?: 'N/A';
@@ -122,6 +123,7 @@ $message .= "<tr><td><strong>Loin Meat Quantity</strong> </td><td>" . $loinMeatQ
 $message .= "<tr><td><strong>Grind Size Of Package</strong> </td><td>" . $grindSizeOfPackage . "</td></tr>";
 $message .= "<tr><td><strong>Fat Type: </strong> </td><td>" . $fatType . "</td></tr>";
 $message .= "<tr><td><strong>Liver</strong> </td><td>" . yesOrNo($liver) . "</td></tr>";
+$message .= "<tr><td><strong>Liver Size Of Package</strong> </td><td>" . $liverSize . "</td></tr>";
 $message .= "<tr><td><strong>Liver: Sliced or Whole</strong> </td><td>" . $liverSlicedOrWhole . "</td></tr>";
 $message .= "<tr><td><strong>Heart: </strong> </td><td>" . yesOrNo($offalHeart) . "</td></tr>";
 $message .= "<tr><td><strong>Bones: </strong> </td><td>" . yesOrNo($offalBones) . "</td></tr>";
