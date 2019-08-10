@@ -2,7 +2,7 @@
 
 /********Declare variables*********/
 
-$mailTo = "danny@dannydimercurio.com";
+$mailTo = "cbgprocessing@gmail.com";
 
 /* Personal Info Section */
 $name = $_POST['name'];
