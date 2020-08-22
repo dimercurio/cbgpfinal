@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
             jerkyTeriyakiAmount: $form.find('input[name="jerkyTeriyakiAmount"]').val(),
         };
 
-        $.post("../Client/order-form-submit.php", data)
+        $.post("../order-form-submit.php", data)
             .done(function(response) {
                 alert("Data Loaded: " + response);
             });

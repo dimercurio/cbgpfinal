@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
             subject: $form.find('input[name="subject"]').val(),
         };
 
-        $.post("../Client/form-to-email.php", data)
+        $.post("../form-to-email.php", data)
             .done(function(response) {
                 alert(response);
             });
