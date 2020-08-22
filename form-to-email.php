@@ -5,7 +5,7 @@ $mailFrom = $_POST['mailFrom'];
 $message = $_POST['message'];
 $subject = $_POST['subject'];
 
-$mailTo = "ddimercurio126@gmail.com";
+$mailTo = "cbgprocessing@gmail.com";
 $headers = "From: " . $mailFrom;
 
 
