@@ -16,6 +16,7 @@ jQuery(document).ready(function($) {
         $.post("../form-to-email.php", data)
             .done(function(response) {
                 alert(response);
+                $('#contactForm')[0].reset();
             });
 
         var dataString = JSON.stringify(data);
