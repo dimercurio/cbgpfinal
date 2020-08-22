@@ -5,13 +5,13 @@ $mailFrom = $_POST['mailFrom'];
 $message = $_POST['message'];
 $subject = $_POST['subject'];
 
-$mailTo = "cbgprocessing@gmail.com";
+$mailTo = "ddimercurio126@gmail.com";
 $headers = "From: " . $mailFrom;
 
 
 
         /*$txt .= "You have received an e-mail from ".$name.".\n\n".$message;*/
-$newSubject = "Inquiry from " . $name;
+$newSubject = "[Country Boys Game Processing] | ".$subject ." | " . $name;
 $success = mail($mailTo, $newSubject, $message, $headers);
 
 if ($success) {
